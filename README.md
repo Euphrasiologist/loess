@@ -6,7 +6,7 @@ There are some discrepancies in the results to the tests in the repo above. I'm 
 
 ## Usage
 
-```
+```Rust
 use loess::Lowess;
 
 let xvals: Vec<f64> = vec![
@@ -29,7 +29,6 @@ let yvals: Vec<f64> = vec![
 let test = Lowess::new(&xvals, &yvals, 0.25, 0, 0.0);
 
 println!("{:?}", test);
-
 ```
 
 You can run this example by running `cargo run --example example1`.
